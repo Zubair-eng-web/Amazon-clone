@@ -65,6 +65,12 @@ function clearCart() {
 
 async function handleOrderSubmit(event) {
     event.preventDefault();
+
+    if (window.location.protocol === 'file:') {
+        alert('Order submission requires a local PHP server. Please open this site through http://localhost or a similar web server, not file://.');
+        return;
+    }
+
     const cart = loadCartData();
     if (!Object.keys(cart).length) {
         alert('Your cart is empty. Add items from the shop first.');
@@ -112,8 +118,8 @@ async function handleOrderSubmit(event) {
         clearCart();
         renderOrderSummary({});
     } catch (error) {
-        console.error(error);
-        alert('Unable to submit order. Please try again later.');
+        console.error('Order submission failed:', error);
+        alert('Unable to submit order. Please try again later. Make sure you are running the site through a PHP-enabled web server, not opening files directly.');
     }
 }
 

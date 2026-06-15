@@ -41,10 +41,16 @@ A simple Amazon-style e-commerce demo built with PHP, HTML, CSS, and JavaScript.
    const DB_NAME = 'amazon_demo';
    ```
 
-5. Open the site in your browser:
-   ```text
-   http://localhost/Amazon-clone/index.html
-   ```
+5. Run the site through a local PHP server. Do not open HTML files directly from the file system.
+
+   - If you use XAMPP, place the project in `htdocs` and open:
+     ```text
+     http://localhost/Amazon-clone/index.html
+     ```
+
+   - If you use WAMP or MAMP, use the local web server URL for your project.
+
+6. The checkout and order submission only work when the site is served over HTTP and PHP is available.
 
 6. Use the app to browse products and submit a checkout order.
 
