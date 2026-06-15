@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Shopping Demo</title>
+    <!-- Use a compatible Font Awesome CDN so the icon classes render correctly -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/buying-process.css">
+</head>
+<body id="top">
+    <header>
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="nav-left">
+                    <div class="nav-logo border">
+                        <div class="logo"></div>
+                    </div>
+                    <div class="nav-address border">
+                        <p class="add-first">Deliver to</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="add-second">Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option value="All">All</option>
+                    </select>
+                    <input class="search-input" type="text" placeholder="Search Amazon">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="nav-actions">
+                    <div class="nav-admin">
+                        <a href="#" class="login-link">Login</a>
+                        <a href="#" class="signup-link">Sign up</a>
+                    </div>
+                    <div class="nav-item nav-account">
+                        <p class="small">Hello, sign in</p>
+                        <p class="big">Account &amp; Lists</p>
+                    </div>
+                    <div class="nav-item nav-returns">
+                        <p class="small">Returns</p>
+                        <p class="big">&amp; Orders</p>
+                    </div>
+                    <div class="nav-item nav-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                        <p class="big">Cart</p>
+                    </div>
+                    <div class="nav-item nav-lang">
+                        <p class="small">EN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-all">
+                    <i class="fa-solid fa-list"></i>
+                    All
+                </div>
+            <div class="panel-links">
+                <a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">Today's Deals</a>
+                <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc">Gift Cards</a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell">Sell</a>
+                <a href="https://www.amazon.com/gp/browse.html?node=16115931011&ref_=nav_cs_registry">Registry</a>
+                <a href="https://www.amazon.com/Amazon-Video/b/?ie=UTF8&node=2858778011&ref_=nav_cs_prime_video">Prime Video</a>
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice">Customer Service</a>
+            </div>
+        </div>
+    </header>
+    <div class="hero-sec">
+        <div class="hero-slider">
+            <div class="hero-slide" style="background-image:url('./amazonlogo.jpg');"></div>
+            <div class="hero-slide" style="background-image:url('./w3.jpg');"></div>
+            <div class="hero-slide" style="background-image:url('./amazonlogo2.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Shop with Amazon-style confidence</h1>
+            <p>Browse curated products, add them to your cart, and checkout quickly with a secure flow.</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+        <div class="hero-controls">
+            <button class="hero-nav hero-prev" type="button" aria-label="Previous slide">‹</button>
+            <button class="hero-nav hero-next" type="button" aria-label="Next slide">›</button>
+        </div>
+        <div class="hero-dot-nav" aria-label="Slide navigation">
+            <button class="hero-dot active" type="button" data-slide="0" aria-label="Slide 1"></button>
+            <button class="hero-dot" type="button" data-slide="1" aria-label="Slide 2"></button>
+            <button class="hero-dot" type="button" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+
+    <section class="shop-sect">
+        <div class="shop-card cat-pots">
+            <img src="pot1.jpg" alt="Pot 1">
+            <p>Pot 1</p>
+        </div>
+        <div class="shop-card cat-pots">
+            <img src="pot2.jpg" alt="Pot 2">
+            <p>Pot 2</p>
+        </div>
+        <div class="shop-card cat-pots">
+            <img src="pot3.jpg" alt="Pot 3">
+            <p>Pot 3</p>
+        </div>
+        <div class="shop-card cat-pots">
+            <img src="pot4.jpg" alt="Pot 4">
+            <p>Pot 4</p>
+        </div>
+    </section>
+
+    <section class="shop-sect">
+        <div class="shop-card cat-footwear">
+            <img src="sandle1.jpg" alt="Sandal Comfort">
+            <p>Sandal Comfort</p>
+        </div>
+        <div class="shop-card cat-footwear">
+            <img src="sandle2.jpg" alt="Sandal Premium">
+            <p>Sandal Premium</p>
+        </div>
+        <div class="shop-card cat-footwear">
+            <img src="sandle3.jpg" alt="Sandal Casual">
+            <p>Sandal Casual</p>
+        </div>
+        <div class="shop-card cat-footwear">
+            <img src="sandle4.jpg" alt="Sandal Sport">
+            <p>Sandal Sport</p>
+        </div>
+    </section>
+    <section class="shop-sect">
+        <div class="shop-card cat-clothing">
+            <img src="c4.jpg" alt="Casual Shirt">
+            <p>Casual Shirt</p>
+        </div>
+        <div class="shop-card cat-clothing">
+            <img src="c3.jpg" alt="Casual Pants">
+            <p>Casual Pants</p>
+        </div>
+        <div class="shop-card cat-clothing">
+            <img src="c2.jpg" alt="Casual Top">
+            <p>Casual Top</p>
+        </div>
+        <div class="shop-card cat-clothing">
+            <img src="c1.jpg" alt="Casual Dress">
+            <p>Casual Dress</p>
+        </div>
+    </section>
+    <section class="shop-sect">
+        <div class="shop-card cat-home">
+            <img src="image7.jpg" alt="Home Decor">
+            <p>Home Decor</p>
+        </div>
+        <div class="shop-card cat-home">
+            <img src="image6.jpg" alt="Bedroom Accent">
+            <p>Bedroom Accent</p>
+        </div>
+        <div class="shop-card cat-home">
+            <img src="image5.jpg" alt="Wall Art">
+            <p>Wall Art</p>
+        </div>
+        <div class="shop-card cat-home">
+            <img src="image4.jpg" alt="Table Lamp">
+            <p>Table Lamp</p>
+        </div>
+    </section>
+     <section class="shop-sect">
+        <div class="shop-card cat-electronics">
+            <img src="electronic6.jpg" alt="Wireless Earbuds">
+            <p>Wireless Earbuds</p>
+        </div>
+        <div class="shop-card cat-electronics">
+            <img src="electronic4.jpg" alt="Portable Speaker">
+            <p>Portable Speaker</p>
+        </div>
+        <div class="shop-card cat-electronics">
+            <img src="electronic3.jpg" alt="Phone Charger">
+            <p>Phone Charger</p>
+        </div>
+        <div class="shop-card cat-electronics">
+            <img src="electronic5.jpg" alt="Smart Watch">
+            <p>Smart Watch</p>
+        </div>
+    </section>
+    <section class="shop-sect">
+        <div class="shop-card cat-jewelry">
+            <img src="gold4.jpg" alt="Gold Necklace">
+            <p>Gold Necklace</p>
+        </div>
+        <div class="shop-card cat-jewelry">
+            <img src="gold3.jpg" alt="Gold Bracelet">
+            <p>Gold Bracelet</p>
+        </div>
+        <div class="shop-card cat-jewelry">
+            <img src="gold2.jpg" alt="Gold Ring">
+            <p>Gold Ring</p>
+        </div>
+        <div class="shop-card cat-jewelry">
+            <img src="gold1.jpg" alt="Gold Earrings">
+            <p>Gold Earrings</p>
+        </div>
+    </section>
+     <section class="shop-sect">
+        <div class="shop-card cat-accessories">
+            <img src="p3.jpg" alt="Phone Case">
+            <p>Phone Case</p>
+        </div>
+        <div class="shop-card cat-accessories">
+            <img src="p4.jpg" alt="Phone Stand">
+            <p>Phone Stand</p>
+        </div>
+        <div class="shop-card cat-accessories">
+            <img src="p2.jpg" alt="Screen Protector">
+            <p>Screen Protector</p>
+        </div>
+        <div class="shop-card cat-accessories">
+            <img src="p.jpg" alt="Phone Mount">
+            <p>Phone Mount</p>
+        </div>
+    </section>
+    <section class="shop-sect">
+        <div class="shop-card cat-watches">
+            <img src="w4.jpg" alt="Digital Watch">
+            <p>Digital Watch</p>
+        </div>
+        <div class="shop-card cat-watches">
+            <img src="w3.jpg" alt="Luxury Watch">
+            <p>Luxury Watch</p>
+        </div>
+        <div class="shop-card cat-watches">
+            <img src="w2.jpg" alt="Sports Watch">
+            <p>Sports Watch</p>
+        </div>
+        <div class="shop-card cat-watches">
+            <img src="w1.jpg" alt="Elegant Watch">
+            <p>Elegant Watch</p>
+        </div>
+    </section>
+
+    <div class="cart-drawer hidden" id="cartDrawer" aria-hidden="true">
+        <div class="cart-backdrop" data-action="close"></div>
+        <aside class="cart-panel" role="dialog" aria-label="Shopping cart overview">
+            <button class="cart-close" data-action="close" aria-label="Close cart">×</button>
+            <h2>Your cart</h2>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Estimated total</span>
+                    <strong id="cartTotal">$0.00</strong>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Proceed to checkout</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About Amazon</a></li>
+                    <li><a href="https://amazon.jobs/">Careers</a></li>
+                    <li><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></li>
+                    <li><a href="https://www.amazon.science/">Amazon Science</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/AmazonIN">Facebook</a></li>
+                    <li><a href="https://x.com/AmazonIN">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/amazondotin">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C">Sell on Amazon</a></li>
+                    <li><a href="https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></li>
+                    <li><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></li>
+                    <li><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></li>
+                    <li><a href="https://supply.amazon.com/?ref_=footer_sta&lang=en-IN">Supply to Amazon</a></li>
+                    <li><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></li>
+                    <li><a href="https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter">Fulfilment by Amazon</a></li>
+                    <li><a href="https://advertising.amazon.in/?ref=Amz.in">Advertise Your Products</a></li>
+                    <li><a href="https://www.amazonpay.in/merchant">Amazon Pay on Merchants</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></li>
+                    <li><a href="https://www.amazon.in/gp/css/returns/homepage.html?ref_=footer_hy_f_4">Returns Centre</a></li>
+                    <li><a href="https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa">Recalls and Product Safety Alerts</a></li>
+                    <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc">100% Purchase Protection</a></li>
+                    <li><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp">Amazon App Download</a></li>
+                    <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <a href="https://www.amazon.in/ref=footer_logo">Amazon</a>
+            </div>
+            <div class="footer-options">
+                <a href="https://www.amazon.in/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang">English</a>
+                <a href="https://www.amazon.in/customer-preferences/country?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_icp_cp">Pakistan</a>
+            </div>
+            <div class="back-to-top">
+                <a href="#top">Back to Top</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="footer-links-column">
+                <a href="https://www.abebooks.com/"><strong>AbeBooks</strong> Books, art & collectibles</a>
+                <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter"><strong>Amazon Web Services</strong> Scalable Cloud Computing Services</a>
+                <a href="https://www.audible.in/"><strong>Audible</strong> Download Audio Books</a>
+                <a href="https://www.imdb.com/"><strong>IMDb</strong> Movies, TV & Celebrities</a>
+            </div>
+            <div class="footer-links-column">
+                <a href="https://www.shopbop.com/"><strong>Shopbop</strong> Designer Fashion Brands</a>
+                <a href="https://www.amazon.in/business?ref=footer_aingw"><strong>Amazon Business</strong> Everything For Your Business</a>
+                <a href="https://www.amazon.in/music/player?ref=footer_apm"><strong>Amazon Music</strong> Stream millions of songs</a>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou">Conditions of Use & Sale</a>
+            <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy">Privacy Notice</a>
+            <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba">Interest-Based Ads</a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 1996-2026, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+    <div class="created-by">
+        <p>Made <span class="author-name"> By Zubair Ahmed a Web & AI developer</span></p>
+    </div>
+    <script>
+        const heroSlider = document.querySelector('.hero-slider');
+        const heroDots = document.querySelectorAll('.hero-dot');
+        const prevHero = document.querySelector('.hero-prev');
+        const nextHero = document.querySelector('.hero-next');
+        let heroIndex = 0;
+        const heroCount = heroDots.length;
+
+        function setHeroSlide(index) {
+            heroIndex = (index + heroCount) % heroCount;
+            heroSlider.style.transform = `translateX(-${heroIndex * 100}%)`;
+            heroDots.forEach((dot, dotIndex) => {
+                dot.classList.toggle('active', dotIndex === heroIndex);
+            });
+        }
+
+        function resetHeroAuto() {
+            clearInterval(window.heroAutoRotate);
+            window.heroAutoRotate = setInterval(() => setHeroSlide(heroIndex + 1), 5000);
+        }
+
+        if (heroSlider && heroDots.length) {
+            prevHero?.addEventListener('click', () => {
+                setHeroSlide(heroIndex - 1);
+                resetHeroAuto();
+            });
+            nextHero?.addEventListener('click', () => {
+                setHeroSlide(heroIndex + 1);
+                resetHeroAuto();
+            });
+            heroDots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    setHeroSlide(Number(dot.dataset.slide));
+                    resetHeroAuto();
+                });
+            });
+            // initialize to first slide and start auto-rotate
+            setHeroSlide(0);
+            window.heroAutoRotate = setInterval(() => setHeroSlide(heroIndex + 1), 5000);
+        }
+    </script>
+    <script src="assets/js/cart.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+</body>
+</html>

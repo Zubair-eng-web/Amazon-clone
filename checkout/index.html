@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Amazon Demo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+    <header>
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="nav-left">
+                    <div class="nav-logo border">
+                        <div class="logo"></div>
+                    </div>
+                    <div class="nav-address border">
+                        <p class="add-first">Deliver to</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="add-second">Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-actions">
+                    <div class="nav-item nav-account">
+                        <p class="small">Hello, sign in</p>
+                        <p class="big">Account &amp; Lists</p>
+                    </div>
+                    <div class="nav-item nav-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-count">0</span>
+                        <p class="big">Cart</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-page">
+        <div class="checkout-hero">
+            <div>
+                <span class="section-tag">Checkout</span>
+                <h1>Complete your purchase</h1>
+                <p>Review your order, add your shipping details, and pay securely.</p>
+            </div>
+            <a class="back-link" href="../index.html"><i class="fa-solid fa-arrow-left"></i> Continue shopping</a>
+        </div>
+
+        <div class="checkout-layout">
+            <section class="checkout-form-section">
+                <div class="checkout-card">
+                    <h2>Shipping information</h2>
+                    <form id="checkoutForm">
+                        <div class="input-group">
+                            <label for="fullName">Full name</label>
+                            <input id="fullName" name="fullName" type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="address">Street address</label>
+                            <input id="address" name="address" type="text" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="city">City</label>
+                                <input id="city" name="city" type="text" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="postal">Postal code</label>
+                                <input id="postal" name="postal" type="text" required>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="state">State / Province</label>
+                                <input id="state" name="state" type="text" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="country">Country</label>
+                                <input id="country" name="country" type="text" value="Pakistan" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="checkout-card">
+                    <h2>Payment details</h2>
+                    <form id="paymentForm">
+                        <div class="input-group">
+                            <label for="cardName">Name on card</label>
+                            <input id="cardName" name="cardName" type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="cardNumber">Card number</label>
+                            <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="expiry">Expiry date</label>
+                                <input id="expiry" name="expiry" type="text" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="cvv">CVV</label>
+                                <input id="cvv" name="cvv" type="password" maxlength="4" inputmode="numeric" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <aside class="order-summary-section">
+                <div class="checkout-card summary-card">
+                    <div class="summary-header">
+                        <h2>Order summary</h2>
+                        <span id="summaryItemCount">0 items</span>
+                    </div>
+                    <div class="summary-list" id="summaryList"></div>
+                    <div class="summary-total">
+                        <span>Order total</span>
+                        <strong id="summaryTotal">$0.00</strong>
+                    </div>
+                    <button class="checkout-btn" id="placeOrderBtn">Place your order</button>
+                    <p class="checkout-note">Secure checkout with encrypted payment processing.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../assets/js/checkout.js" defer></script>
+</body>
+</html>

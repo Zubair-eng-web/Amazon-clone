@@ -1,0 +1,224 @@
+:root {
+    --primary: #131a22;
+    --accent: #ff9900;
+    --accent-dark: #f08500;
+    --surface: #f6f6f8;
+    --card: #ffffff;
+    --text: #111111;
+    --muted: #5a5a5a;
+    --border: rgba(19, 26, 34, 0.12);
+}
+
+body {
+    background: var(--surface);
+}
+
+.checkout-page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 24px 48px;
+}
+
+.checkout-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.checkout-hero .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.16em;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.checkout-hero h1 {
+    margin: 10px 0 12px;
+    font-size: clamp(2rem, 2.6vw, 3rem);
+    color: var(--primary);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr);
+    gap: 24px;
+}
+
+.checkout-card {
+    background: var(--card);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 18px 36px rgba(19, 26, 34, 0.08);
+    border: 1px solid var(--border);
+}
+
+.checkout-card + .checkout-card {
+    margin-top: 20px;
+}
+
+.checkout-card h2 {
+    margin-top: 0;
+    font-size: 1.45rem;
+    color: var(--primary);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.input-row {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+label {
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    font-size: 0.98rem;
+    color: var(--text);
+    background: #fff;
+}
+
+input:focus {
+    border-color: var(--accent);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 153, 0, 0.12);
+}
+
+.order-summary-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.summary-card {
+    position: sticky;
+    top: 24px;
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.summary-list {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.summary-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: var(--surface);
+}
+
+.summary-item strong {
+    color: var(--primary);
+}
+
+.summary-item span {
+    color: var(--muted);
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    border-radius: 16px;
+    background: #fafafa;
+    border: 1px solid var(--border);
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 18px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 16px 0;
+    background: var(--accent);
+    border: none;
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 180ms ease;
+}
+
+.checkout-btn:disabled {
+    background: #e1e1e1;
+    color: #777;
+    cursor: not-allowed;
+}
+
+.checkout-btn:hover {
+    background: var(--accent-dark);
+}
+
+.checkout-note {
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.section-tag {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.78rem;
+}
+
+@media (max-width: 960px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 680px) {
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+}
