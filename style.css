@@ -97,7 +97,7 @@ header {
 }
 
 .logo{
-    background-image:url(logo.jpg);
+    background-image:url(images/logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -395,7 +395,7 @@ header {
 
 .hero-sec{
     height: 400px;
-    background-image: url(heroimg.jpg);
+    background-image: url(images/heroimg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -1184,3 +1184,4 @@ header {
     background: #22d3ee;
     transform: translateY(-1px);
 }
+
